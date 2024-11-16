@@ -1,7 +1,3 @@
-Here's a more professional and polished version of your portfolio, formatted to highlight your skills and experience effectively:
-
----
-
 ## **Mohammadjuned Shaikh**  
 *React Native | Flutter | UI/UX Developer*  
 Vadodara, India  
