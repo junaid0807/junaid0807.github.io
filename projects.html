@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mohammadjuned Shaikh - Portfolio</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom Styles -->
+    <style>
+        section {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        .section-title {
+            margin-bottom: 30px;
+        }
+
+        .portfolio-item {
+            margin-bottom: 20px;
+        }
+
+        .project-description {
+            font-size: 14px;
+            color: #6c757d;
+            margin-bottom: 8px;
+        }
+
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <style>
+        .section-title {
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .progress-bar {
+            background-color: #28a745;
+            transition: width 1s ease-in-out;
+        }
+
+        .progress-bar[aria-valuenow="75"] {
+            background-color: #ffc107;
+        }
+
+        .progress-bar[aria-valuenow="60"] {
+            background-color: #007bff;
+        }
+
+        .list-unstyled {
+            padding-left: 0;
+        }
+
+        .list-unstyled li {
+            margin-bottom: 20px;
+        }
+
+        .d-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .fa-check-circle {
+            color: #28a745;
+            font-size: 1.25rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mohammadjuned Shaikh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="bg-secondary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Projects</h1>
+        </div>
+    </header>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="container ">
+        <div class="row" id="projects_container">
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-dark text-white">
+        <div class="container">
+            <h2 class="section-title text-center text-white">Contact</h2>
+            <div class="contact-info text-center">
+                <p>Email: <a href="mailto:junaidmid92@gmail.com">junaidmid92@gmail.com</a></p>
+                <p>Phone: <a href="tel:+919722957377">+91 9722957377</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Mohammadjuned Shaikh. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const projects = [
+            {
+                "title": "Iqamah App & Web App",
+                "description": "A hybrid app that helps users find the nearest mosque along with the Iqamah timings and mosque location map.",
+                "technologies": ["React-Native", "React Navigation", "React.js", "Redux"]
+            },
+            {
+                "title": "Iqamah Android TV App",
+                "description": "An Android TV app to search for mosques and view Iqamah times along with a timer.",
+                "technologies": ["Android", "Java", "XML", "Leanback"]
+            },
+            {
+                "title": "Car Rental Services Mobile Application",
+                "description": "A mobile app that allows users to search, book, and manage car rental services.",
+                "technologies": ["React-Native", "React Navigation"]
+            },
+            {
+                "title": "Job Search Mobile Application",
+                "description": "A job search and application mobile app with document management features.",
+                "technologies": ["React-Native", "React Navigation", "Redux", "Redux-Saga"]
+            },
+            {
+                "title": "Beauty Parlour Search & Booking App",
+                "description": "An app that allows users to search for beauty parlours based on location, view profiles, and make appointments.",
+                "technologies": ["React-Native", "React Navigation", "Redux", "React-native-elements"]
+            },
+            {
+                "title": "Tracking Mobile Application",
+                "description": "A field visit tracking and attendance management app for mobile.",
+                "technologies": ["Flutter", "Dart", "Flutter-Redux"]
+            },
+            {
+                "title": "Medicine E-commerce Mobile Application",
+                "description": "An e-commerce app for purchasing medicines with features such as product categories, prescriptions, and order management.",
+                "technologies": ["React-Native", "React Navigation", "Redux", "Redux-Saga"]
+            },
+            {
+                "title": "Quran Audio Player Mobile Application",
+                "description": "A mobile app for Quran audio playback with features like verse translation and adjustable audio settings.",
+                "technologies": ["React-Native", "Redux", "React Navigation", "RN-Track Player", "TypeScript"]
+            },
+            {
+                "title": "Student Performance Application",
+                "description": "A desktop application to manage student groups, decode and display performance data, and allow data imports/exports.",
+                "technologies": ["React.js", "Electron", "TypeScript", "SQLite", "Node.js"]
+            },
+            {
+                "title": "Baseball Performance Web & Mobile Application",
+                "description": "An app for creating baseball sessions, inviting players, and specifying positions on the field.",
+                "technologies": ["Bootstrap", "HTML", "CSS", "JavaScript", "React-Native", "Firebase", "React Navigation"]
+            },
+            {
+                "title": "Prayer Mobile Application",
+                "description": "An app providing prayer feed, testimonials, special prayer words, and NGO information along with alarms and notifications.",
+                "technologies": ["React-Native", "Firebase", "React Navigation"]
+            },
+            {
+                "title": "Sport Session Management Mobile Application",
+                "description": "An app to create sports sessions, invite players, and specify positions on the field.",
+                "technologies": ["React-Native", "Firebase", "React Navigation"]
+            },
+            {
+                "title": "Community Tiffin Services",
+                "description": "A service app allowing users to view menus, give feedback, request extra parcels, and manage their subscription.",
+                "technologies": ["React-Native", "Firebase", "React Navigation"]
+            },
+            {
+                "title": "POS & Kitchen Web Application",
+                "description": "A web application for managing a restaurant’s point-of-sale system, orders, customer management, and kitchen item statuses.",
+                "technologies": ["React.js", "React Hook", "Socket.io", "React Router", "Redux", "Node.js", "ExpressJS", "MySQL"]
+            }
+        ];
+
+        let projects_html = "";
+        projects.forEach((e)=>{
+            projects_html += `
+            <div class="col-md-12 portfolio-item">
+                <h5>${e.title}</h5>
+                <p class="project-description">
+                    ${e.description}</p>
+                <p><strong>Technologies:</strong> ${e.technologies.join(", ")}</p>
+            </div>`;
+        })
+        document.getElementById("projects_container").innerHTML = projects_html;
+
+    </script>
+</body>
+
+</html>
